@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="load">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+        </div>
+        <div class="songlist">
+            <div class="song">
+                <div class="title">
+                    Coming Home - Atch
+                </div>
+                <div class="play" id="ComingHome">
+                    <span class="material-icons">
+                        play_circle
+                    </span>
+                </div>
+                <div class="stop">
+                    <span class="material-icons">
+                        cancel
+                    </span>
+                </div>
+                <div class="download">
+                    <a href="/ComingHome.mp3" download>
+                        <span class="material-icons">
+                            file_download
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="song">
+                <div class="title">
+                    Going Home - MusicByAden
+                </div>
+                <div class="play" id="GoingHome">
+                    <span class="material-icons">
+                        play_circle
+                    </span>
+                </div>
+                <div class="stop">
+                    <span class="material-icons">
+                        cancel
+                    </span>
+                </div>
+                <div class="download">
+                    <a href="/GoingHome.mp3" download>
+                        <span class="material-icons">
+                            file_download
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="song">
+                <div class="title">
+                    Shine - Onycs
+                </div>
+                <div class="play" id="Shine">
+                    <span class="material-icons">
+                        play_circle
+                    </span>
+                </div>
+                <div class="stop">
+                    <span class="material-icons">
+                        cancel
+                    </span>
+                </div>
+                <div class="download">
+                    <a href="/Shine.mp3" download>
+                        <span class="material-icons">
+                            file_download
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <input type="range" max="1" min="0" step="0.05" class="volume">
+    </div>
+    <script src="/music_player/script.js"></script>
+</body>
+</html>
